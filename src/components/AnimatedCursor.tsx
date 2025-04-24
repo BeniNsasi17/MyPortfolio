@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
 const AnimatedCursor = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -35,7 +35,7 @@ const AnimatedCursor = () => {
     };
   }, []);
 
-  const variants = {
+  const variants: Variants = {
     default: {
       x: mousePosition.x - 12,
       y: mousePosition.y - 12,
@@ -47,7 +47,7 @@ const AnimatedCursor = () => {
       height: 40,
       width: 40,
       backgroundColor: 'rgba(59, 110, 176, 0.1)',
-      mixBlendMode: 'normal',
+      mixBlendMode: 'normal' as const,
       border: '2px solid #3B6EB0',
     },
   };
