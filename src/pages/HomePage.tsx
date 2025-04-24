@@ -87,8 +87,8 @@ interface FormStatus {
 // 3. Créez un template d'email (appelé "template_contact" ou mettez à jour cette constante)
 // 4. Assurez-vous que votre template contient les variables: from_name, from_email, subject, message
 // 5. Obtenez votre clé publique et remplacez la valeur ci-dessous
-const EMAILJS_SERVICE_ID = "service_tnl9zk4";
-const EMAILJS_TEMPLATE_ID = "template_zn61lwq";
+const EMAILJS_SERVICE_ID = "service_e0x6ut5";
+const EMAILJS_TEMPLATE_ID = "template_eczbqws";
 const EMAILJS_PUBLIC_KEY = "tc2h5SQlq1Kp2SxkJ"; // Vérifiez que cette clé est correcte!
 
 const HomePage = () => {
