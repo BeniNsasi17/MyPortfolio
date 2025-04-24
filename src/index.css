@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg-primary: #f9fafb;   /* bg-gray-50 */
+    --color-bg-secondary: #ffffff; /* white */
+    --color-text-primary: #111827; /* text-gray-900 */
+    --color-text-secondary: #4b5563; /* text-gray-600 */
+    --color-accent-primary: #3B6EB0; /* primary */
+    --color-accent-secondary: #4F7CAC; /* primary-light */
+    --color-accent-dark: #2A5DA0; /* primary-dark */
+  }
+
+  .dark {
+    --color-bg-primary: #111827;  /* bg-gray-900 */
+    --color-bg-secondary: #1f2937; /* bg-gray-800 */
+    --color-text-primary: #f9fafb; /* text-gray-50 */
+    --color-text-secondary: #9ca3af; /* text-gray-400 */
+    --color-accent-primary: #4F7CAC; /* primary-light */
+    --color-accent-secondary: #3B6EB0; /* primary */
+    --color-accent-dark: #2A5DA0; /* primary-dark */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    @apply font-sans transition-colors duration-300;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-accent-dark);
+    @apply font-bold;
+  }
+
+  /* Test de fonctionnement du mode sombre */
+  .dark-mode-test {
+    @apply text-gray-900 dark:text-white bg-white dark:bg-gray-800 p-2 m-2 rounded; 
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .btn-primary {
+    background-color: var(--color-accent-primary);
+    color: white;
+    @apply hover:bg-[#2A5DA0] dark:hover:bg-[#3B6EB0];
+  }
+  
+  .text-accent {
+    color: var(--color-accent-primary);
+  }
+  
+  .bg-accent {
+    background-color: var(--color-accent-primary);
+  }
+  
+  .section {
+    @apply py-16 px-4 md:px-8 lg:px-16;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .dark .dark-invert {
+    filter: invert(1);
+  }
+}
