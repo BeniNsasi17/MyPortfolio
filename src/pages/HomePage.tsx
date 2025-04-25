@@ -346,7 +346,7 @@ const HomePage = () => {
                 >
                   {/* Replace with actual image */}
                   <img 
-                    src="/professional_pic.jpg" 
+                    src="professional_pic.jpg" 
                     alt="Portrait de Beni Nsasi" 
                     className="w-full h-full object-cover"
                   />
@@ -920,7 +920,7 @@ const HomePage = () => {
                   </svg>
                 </div>
                 <h3 className="text-lg font-semibold mb-2 dark:text-white">Téléphone</h3>
-                <p className="text-gray-600 dark:text-gray-400">+33 7 65 43 21 09</p>
+                <p className="text-gray-600 dark:text-gray-400">+243 813440055</p>
               </div>
               
               <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg text-center">
@@ -931,7 +931,7 @@ const HomePage = () => {
                   </svg>
                 </div>
                 <h3 className="text-lg font-semibold mb-2 dark:text-white">Localisation</h3>
-                <p className="text-gray-600 dark:text-gray-400">Lyon, France</p>
+                <p className="text-gray-600 dark:text-gray-400">Kinshasa, RDC</p>
               </div>
             </motion.div>
           </motion.div>
